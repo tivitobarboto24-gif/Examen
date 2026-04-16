@@ -1,0 +1,158 @@
+/* Estilos para la página de productos de Basketfull */
+:root{
+    --color-principal: #ff4517;
+    --color-secundario: #6f2d9c;
+    --color-fondo: #e69b83;
+    --color-texto: #000000;
+    --color-blanco: #ffffff;
+}
+/* Reseteo de estilos y configuración básica */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos generales para la página */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+/* Estilos para el encabezado y navegación */
+header{
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilos para las imágenes, asegurando que sean responsivas */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Estilos para el logo */
+header .logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6f2d9c;
+}
+/* Estilos para la navegación */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+/* Estilos para los enlaces de navegación, incluyendo efectos de hover y estado activo */
+nav a{
+    text-decoration:none;
+    color: var(--color-blanco);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+/* Efecto de hover para los enlaces de navegación */
+nav a:hover{
+    color: #b81919;
+}
+/* Estilos para el enlace activo en la navegación */
+nav a.active{
+    color: #b81919;
+    border-bottom: 2px solid #b81919;
+}
+/* Estilos para el contenido principal*/
+main{
+    min-height: 70vh;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Estilos para las secciones dentro del contenido principal, con un margen inferior para separar cada sección */
+section{
+    margin-bottom: 3rem;
+}
+/* Estilos para la galería de productos*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+/* Estilos para cada artículo dentro de la galería,*/
+.item{
+    background-color: var(--color-blanco);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;   
+}
+/*Estilo para el formulario de contacto*/
+form{
+    background: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* Estilos para los grupos de información dentro del formulario*/
+.grupo-info{
+    margin-bottom: 1.5rem;
+}
+.grupo-info label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.grupo-info input[type="text"],
+.grupo-info input[type="email"],
+.grupo-info input[type="tel"],
+.grupo-info textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Estilos para el botón de envío del formulario*/
+.boton-E{
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.boton-E:hover{
+    background-color: var(--color-secundario);
+}
+/* Estilos para el pie de página*/
+footer{
+    background-color: var(--color-texto);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+.redes img{
+    width: 35px;
+    height: 35px;
+    object-fit:contain;
+    transition: transform 0.3s ease;
+}
+.redes img:hover{
+    transform: scale(1.1);
+}

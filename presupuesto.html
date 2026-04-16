@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Título de la página y datos de estilo-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basketfull - Presupuesto</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <!--cabezera y navegación de la página-->
+    <body>
+        <header>
+            <div class="logo">Basketfull</div>
+                <!--navegación de la página-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="presupuesto.html" class="active">Presupuesto</a></li> 
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--contenido principal de la página-->
+        <main>
+            <h1>¿Necesitas un presupuesto?¡Solicitalo ahora!</h1>
+            <!--Formulario para solicitar un presupuesto, con campos para nombre, correo electrónico, teléfono y un área de texto para solicitar información adicional-->
+            <form action="#" method="Post">
+                <div class="grupo-info">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-info">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupo-info">
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="grupo-info">
+                    <label for="informacion">Solicita más información:</label>
+                    <textarea id="informacion" name="informacion" rows="5" required></textarea>
+                </div>
+                <!--Checkbox para aceptar la política de privacidad de la empresa-->
+                <div class="grupo-info" style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad" style="margin-bottom: 0;">Acepto la política de privacidad de la empresa</label>
+                </div>
+                <!--Botón para enviar el formulario-->
+                <button type="submit" class="boton-E">Enviar Solicitud</button>
+            </form>
+        </main>
+        <!--pie de página con datos de contacto-->
+        <footer>
+            <p>Dirección: Calle Principal, 123 - Ciudad Grande</p>
+            <p><a href="#" style="color:white;">Aviso Legal</a>| &copy; 2026 Basketfull. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
